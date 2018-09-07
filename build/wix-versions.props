@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
+   <PropertyGroup>
+     <BLDVERMAJOR>$(PRODUCT_MAJOR)</BLDVERMAJOR>
+     <BLDVERMINOR>$(PRODUCT_MINOR)</BLDVERMINOR>
+     <BLDNUMMAJOR>$(BUILD_MAJOR)</BLDNUMMAJOR>
+     <BLDNUMMINOR>$(BUILD_MINOR)</BLDNUMMINOR>
+     <DefineConstants>BLDVERMAJOR=$(BLDVERMAJOR);BLDVERMINOR=$(BLDVERMINOR);BLDNUMMAJOR=$(BLDNUMMAJOR);BLDNUMMINOR=$(BLDNUMMINOR);$(DefineConstants)</DefineConstants>
+   </PropertyGroup>
+</Project>
