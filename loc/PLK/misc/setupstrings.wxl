@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <!--
     Copyright (c) Microsoft Corporation. All rights reserved.
     Licensed under the MIT license.
 -->
-
 <WixLocalization Culture="pl-pl" xmlns="http://schemas.microsoft.com/wix/2006/localization">
 
   <String Id="Language">1045</String>
@@ -296,6 +294,7 @@ Aby zainstalować tę wersję usług IIS Media Services, musisz odinstalować fu
   <String Id="NetFX2OrGreaterRequired">Do zainstalowania produktu [ProductName] jest wymagany program .NET Framework w wersji 2.0 lub nowszy.</String>
   <String Id="NetFX35OrGreaterRequired">Do zainstalowania programu [ProductName] jest potrzebny program Microsoft .NET Framework w wersji 3.5 lub nowszej. Naciśnij przycisk „Dodaj funkcje” w sekcji Menedżer serwera, aby zainstalować program Microsoft .Net w wersji 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.0 lub nowszej.</String>
+  <String Id="NetFX45OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.5 lub nowszej.</String>  
   <String Id="NetFX20SP1IsRequired">Przed zainstalowaniem produktu [ProductName] zainstaluj dodatek Service Pack 1 (lub nowszy) dla programu Microsoft .NET Framework w wersji 2.0.</String>
   <String Id="WindowsUpdateEnabled">Nie można wyłączyć usługi Windows Update (wuauserv), ponieważ jest ona wymagana do zainstalowania produktu [ProductName].</String>
   <String Id="GetFromOSforWin7">Przystawka PowerShell stanowi część systemu operacyjnego Windows. Zainstaluj ją za pomocą menu Programy i funkcje lub narzędzia Menedżer serwera.</String>

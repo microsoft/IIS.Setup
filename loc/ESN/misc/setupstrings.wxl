@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
     Copyright (c) Microsoft Corporation. All rights reserved.
     Licensed under the MIT license.
 -->
-
 <WixLocalization Culture="es-es" xmlns="http://schemas.microsoft.com/wix/2006/localization">
 
   <String Id="Language">3082</String>
@@ -296,6 +294,7 @@ Para instalar esta versión de los Servicios multimedia de IIS, debe desinstalar
   <String Id="NetFX2OrGreaterRequired">Es necesario Microsoft .NET Framework 2.0 o posterior para instalar [ProductName].</String>
   <String Id="NetFX35OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 3.5 o posterior, para instalar [ProductName]. Use la opción 'Agregar características' del Administrador del servidor para instalar Microsoft .Net, versión 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.0 o posterior, para instalar [ProductName].</String>
+  <String Id="NetFX45OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.5 o posterior, para instalar [ProductName].</String>  
   <String Id="NetFX20SP1IsRequired">Instale Microsoft .NET Framework 2.0 Service Pack 1 (o un Service Pack posterior) antes de instalar [ProductName].</String>
   <String Id="WindowsUpdateEnabled">No se puede deshabilitar el servicio Windows Update (wuauserv), porque es necesario para instalar [ProductName].</String>
   <String Id="GetFromOSforWin7">El complemento PowerShell forma parte del sistema operativo Windows. Instálelo desde 'Programas y características' o 'Administrador del servidor'.</String>
