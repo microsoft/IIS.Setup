@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <!--
     Copyright (c) Microsoft Corporation. All rights reserved.
     Licensed under the MIT license.
 -->
+
 <WixLocalization Culture="pl-pl" xmlns="http://schemas.microsoft.com/wix/2006/localization">
 
   <String Id="Language">1045</String>
