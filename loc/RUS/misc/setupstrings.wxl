@@ -296,6 +296,7 @@
   <String Id="NetFX2OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 2.0 или более поздней.</String>
   <String Id="NetFX35OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 3.5 или более поздней.  Воспользуйтесь функцией диспетчера сервера "Добавить функции", чтобы установить Microsoft .Net версии 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 4.0 или более поздней.</String>
+  <String Id="NetFX45OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 4.5 или более поздней.</String>  
   <String Id="NetFX20SP1IsRequired">Перед установкой [ProductName] установите Microsoft .NET Framework версии 2.0 с пакетом обновления 1 (SP1)или более поздним.</String>
   <String Id="WindowsUpdateEnabled">Службу Windows Update (wuauserv) невозможно отключить, она необходима для установки [ProductName].</String>
   <String Id="GetFromOSforWin7">Оснастка PowerShell является частью операционной системы Windows. Установите ее с помощью элемента панели управления "Программы и компоненты" или диспетчера сервера.</String>

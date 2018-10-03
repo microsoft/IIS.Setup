@@ -296,6 +296,7 @@ ASP.NET 役割サービスをインストールした後で、この製品のイ
   <String Id="NetFX2OrGreaterRequired">[ProductName] をインストールするには、Microsoft .NET Framework Version 2.0 以降が必要です。</String>
   <String Id="NetFX35OrGreaterRequired">[ProductName] をインストールするには、Microsoft .NET Framework Version 3.5 以降が必要です。サーバー マネージャーの [機能の追加] を使用して、Microsoft .Net Version 3.5 をインストールしてください。</String>
   <String Id="NetFX4OrGreaterRequired">[ProductName] をインストールするには、Microsoft .NET Framework Version 4.0 以降が必要です。</String>
+  <String Id="NetFX45OrGreaterRequired">[ProductName] をインストールするには、Microsoft .NET Framework Version 4.5 以降が必要です。</String>  
   <String Id="NetFX20SP1IsRequired">[ProductName] をインストールする前に、Microsoft .NET Framework Version 2.0 Service Pack 1 (またはそれ以降の Service Pack) をインストールしてください。</String>
   <String Id="WindowsUpdateEnabled">Windows Update (wuauserv) サービスを無効にすることはできません。[ProductName] をインストールする場合は必須です。</String>
   <String Id="GetFromOSforWin7">PowerShell スナップインは、Windows オペレーティング システムに付属しています。[プログラムと機能] またはサーバー マネージャーからインストールしてください。</String>

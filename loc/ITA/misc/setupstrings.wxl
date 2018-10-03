@@ -296,6 +296,7 @@ Per installare questa versione di IIS Media Services, è necessario disinstallar
   <String Id="NetFX2OrGreaterRequired">Per installare [ProductName], è richiesto Microsoft .NET Framework versione 2.0 o versione successiva.</String>
   <String Id="NetFX35OrGreaterRequired">Microsoft .NET Framework versione 3.5 o successiva necessario per installare [ProductName]. Utilizzare 'Aggiungi funzionalità'  in Server Manager per installare Microsoft .NET versione 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Microsoft .NET Framework versione 4.0 o successiva necessario per installare [ProductName].</String>
+  <String Id="NetFX45OrGreaterRequired">Microsoft .NET Framework versione 4.5 o successiva necessario per installare [ProductName].</String>  
   <String Id="NetFX20SP1IsRequired">Prima di installare [ProductName], installare Microsoft .NET Framework versione 2.0 Service Pack 1 o versione successiva.</String>
   <String Id="WindowsUpdateEnabled">Impossibile disabilitare il servizio Windows Update (wuauserv). È richiesto per installare [ProductName].</String>
   <String Id="GetFromOSforWin7">Lo snap-in di PowerShell fa parte del sistema operativo Windows. Installarlo mediante 'Programmi e funzionalità' o 'Server Manager'.</String>

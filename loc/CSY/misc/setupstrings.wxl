@@ -296,6 +296,7 @@ Pokud chcete nainstalovat tuto verzi služby IIS Media Services, je třeba odins
   <String Id="NetFX2OrGreaterRequired">K instalaci produktu [ProductName] je požadováno rozhraní Microsoft .NET Framework 2.0 nebo vyšší.</String>
   <String Id="NetFX35OrGreaterRequired">K instalaci produktu [ProductName] je vyžadováno rozhraní Microsoft .NET Framework 3.5 nebo vyšší. Nainstalujte toto rozhraní pomocí tlačítka Přidat funkce ve správci serveru.</String>
   <String Id="NetFX4OrGreaterRequired">K instalaci produktu [ProductName] je vyžadováno rozhraní Microsoft .NET Framework 4.0 nebo vyšší.</String>
+  <String Id="NetFX45OrGreaterRequired">K instalaci produktu [ProductName] je vyžadováno rozhraní Microsoft .NET Framework 4.5 nebo vyšší.</String>
   <String Id="NetFX20SP1IsRequired">Před instalací produktu [ProductName] nainstalujte rozhraní Microsoft .NET Framework verze 2.0 Service Pack 1 (nebo novější aktualizaci Service Pack).</String>
   <String Id="WindowsUpdateEnabled">Služba Windows Update (wuauserv) nemůže být zakázána. Je požadována pro instalaci produktu [ProductName].</String>
   <String Id="GetFromOSforWin7">Modul snap-in PowerShell je součástí operačního systému Windows. Nainstalujte jej prostřednictvím ovládacího panelu Programy a funkce nebo prostřednictvím Správce serveru.</String>
