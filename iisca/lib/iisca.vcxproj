@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" InitialTargets="EnsureWixToolsetInstalled" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(ProjectDir)..\..\build\submodule.props" Condition="Exists('$(ProjectDir)..\..\build\submodule.props')" />
   <Import Project="$(IIS-Common)build\settings.props" Condition="Exists('$(IIS-Common)build\settings.props')" />
   <Import Project="$(IIS-Common)build\versions.props" Condition="Exists('$(IIS-Common)build\versions.props')" />
@@ -21,6 +21,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup>
+    <WixPkgPath>..\..\packages\WiX.3.11.1\</WixPkgPath>
+    <WixNativeCATargetsPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\wix.nativeca.targets</WixNativeCATargetsPath>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="cgi_restrictions.cpp" />
     <ClCompile Include="ConfigShared.cpp" />
@@ -85,7 +89,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(WIX)sdk\$(WixPlatformToolset)\inc;$(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WixIncPath);$(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <Link>
@@ -109,22 +113,28 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
     <Link>
-      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x86);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WIX)sdk\$(WixPlatformToolset)\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x86);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
     <Link>
-      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WIX)sdk\$(WixPlatformToolset)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>Machinex64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(WixNativeCATargetsPath)" Condition=" '$(WixNativeCATargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.NativeCA.targets" Condition=" '$(WixNativeCATargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.NativeCA.targets') " />
-  <Target Name="EnsureWixToolsetInstalled" Condition=" '$(WixNativeCATargetsImported)' != 'true' ">
+  <Target Name="EnsureWixToolsetInstalled" BeforeTargets="_PrepareForBuild" Condition=" '$(WixNativeCATargetsImported)' != 'true' ">
     <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
   </Target>
+  <PropertyGroup>
+    <WixLibPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\$(WixPlatformToolset)\lib\</WixLibPath>
+    <WixLibPath Condition=" '$(WixLibPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\lib\</WixLibPath>
+    <WixIncPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\inc\</WixIncPath>
+    <WixIncPath Condition=" '$(WixIncPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\inc\</WixIncPath>
+  </PropertyGroup>
   <Target Name="EnsureImportsExist" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project is trying to import a missing file: {0}.</ErrorText>
