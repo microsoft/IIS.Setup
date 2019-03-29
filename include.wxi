@@ -2,14 +2,19 @@
 
 <Include>
   <?define DiscoverabilityKeyRoot = "SOFTWARE\Microsoft\IIS Extensions"?>
-  <?define OOBBuildVersion = $(var.BLDVERMAJOR).$(var.BLDVERMINOR).$(var.BLDNUMMAJOR).$(var.BLDNUMMINOR)?>
 
   <!-- Allow build number as argument or use default -->
   <?if $(var.BLDNUMMAJOR) = "" ?>
     <?error Build number undefined ?>
   <?endif?>
 
-  <?if $(var.Platform) = "x64"?>
+  <?if $(var.Platform) = "x64" ?>
+    <?define BUILDTARGET = "amd64" ?>
+  <?elseif $(var.Platform) = "x86" ?>
+    <?define BUILDTARGET = "i386" ?>
+  <?endif?>
+
+  <?if $(var.BUILDTARGET)="amd64"?>
     <?define IsWin64 = yes ?>
     <?define PlatformArchitecture = x64 ?>
     <?define ProgramFilesFolder = ProgramFiles64Folder ?>
@@ -17,12 +22,16 @@
     <?define SystemFolder = System64Folder ?>
     <?define SysWow64Folder = SystemFolder ?>
     <?define PlatformValue = x64 ?>
-  <?elseif $(var.Platform) = "x86" ?>
+  <?elseif $(var.BUILDTARGET)="i386" ?>
     <?define IsWin64 = no ?>
     <?define PlatformArchitecture = x86 ?>
     <?define ProgramFilesFolder = ProgramFilesFolder ?>
     <?define SystemFolder = SystemFolder ?>
-    <?define PlatformValue = Intel ?>
+    <?define PlatformValue = x86 ?>
+  <?endif?>
+
+  <?ifndef LOCBUILD ?>
+    <?define LOCBUILD = 0 ?>
   <?endif?>
 
   <!-- Ensure build target properly initialized -->
