@@ -10,6 +10,8 @@
 
   <?if $(var.Platform) = "x64" ?>
     <?define BUILDTARGET = "amd64" ?>
+  <?elseif $(var.Platform) = "arm64" ?>
+    <?define BUILDTARGET = "arm64" ?>
   <?elseif $(var.Platform) = "x86" ?>
     <?define BUILDTARGET = "i386" ?>
   <?endif?>
@@ -22,6 +24,14 @@
     <?define SystemFolder = System64Folder ?>
     <?define SysWow64Folder = SystemFolder ?>
     <?define PlatformValue = x64 ?>
+  <?elseif $(var.BUILDTARGET) = "arm64"?>
+    <?define IsWin64 = yes ?>
+    <?define PlatformArchitecture = arm64 ?>
+    <?define ProgramFilesFolder = ProgramFiles64Folder ?>
+    <?define ProgramFilesFolder32 = ProgramFilesFolder ?>
+    <?define SystemFolder = System64Folder ?>
+    <?define SysWow64Folder = SystemFolder ?>
+    <?define PlatformValue = arm64 ?>
   <?elseif $(var.BUILDTARGET)="i386" ?>
     <?define IsWin64 = no ?>
     <?define PlatformArchitecture = x86 ?>
