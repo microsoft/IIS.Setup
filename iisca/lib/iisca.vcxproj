@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup>
-    <WixPkgPath>..\..\packages\WiX.3.11.1\</WixPkgPath>
-    <WixNativeCATargetsPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\wix.nativeca.targets</WixNativeCATargetsPath>
+    <WixPkgPath>..\..\packages\VS.Tools.Wix.17.0.21110501\</WixPkgPath>
+    <WixNativeCATargetsPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\wix.nativeca.targets</WixNativeCATargetsPath>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="cgi_restrictions.cpp" />
@@ -130,9 +130,9 @@
     <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
   </Target>
   <PropertyGroup>
-    <WixLibPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\$(WixPlatformToolset)\lib\</WixLibPath>
+    <WixLibPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\$(WixPlatformToolset)\lib\</WixLibPath>
     <WixLibPath Condition=" '$(WixLibPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\lib\</WixLibPath>
-    <WixIncPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)tools\sdk\inc\</WixIncPath>
+    <WixIncPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\inc\</WixIncPath>
     <WixIncPath Condition=" '$(WixIncPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\inc\</WixIncPath>
   </PropertyGroup>
   <Target Name="EnsureImportsExist" BeforeTargets="PrepareForBuild">
