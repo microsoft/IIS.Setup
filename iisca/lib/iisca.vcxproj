@@ -20,6 +20,22 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64EC">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64EC">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64EC</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup>
     <WixPkgPath>..\..\packages\VS.Tools.Wix.17.0.21110501\</WixPkgPath>
@@ -78,7 +94,7 @@
   <PropertyGroup>
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup>
@@ -121,6 +137,12 @@
     <Link>
       <AdditionalLibraryDirectories>$(VC_ReferencesPath_x64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>Machinex64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64' Or '$(Platform)'=='ARM64EC'">
+    <Link>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_arm64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)arm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineArm64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
