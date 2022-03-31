@@ -297,6 +297,7 @@
   <String Id="NetFX35OrGreaterRequired">需要有 Microsoft .NET Framework 3.5 版或更高版本才能安装 [ProductName]。使用“服务器管理器”下的“添加功能”可安装 Microsoft .Net 3.5 版。</String>
   <String Id="NetFX4OrGreaterRequired">需要有 Microsoft .NET Framework 4.0 版或更高版本才能安装 [ProductName]。</String>
   <String Id="NetFX45OrGreaterRequired">需要有 Microsoft .NET Framework 4.5 版或更高版本才能安装 [ProductName]。</String>  
+  <String Id="NetFX472OrGreaterRequired">需要有 Microsoft .NET Framework 4.7.2 版或更高版本才能安装 [ProductName]。</String>  
   <String Id="NetFX20SP1IsRequired">请先安装 Microsoft .NET Framework 2.0 Service Pack 1(或更高版本的 Service Pack)，然后再安装 [ProductName]。</String>
   <String Id="WindowsUpdateEnabled">不能禁用 Windows Update (wuauserv)服务，安装 [ProductName] 需要此服务。</String>
   <String Id="GetFromOSforWin7">PowerShell 管理单元是 Windows 操作系统的一部分。请通过“程序和功能”或“服务器管理器”来安装它。</String>
