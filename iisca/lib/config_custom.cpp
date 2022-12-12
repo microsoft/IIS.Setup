@@ -19,7 +19,7 @@ CheckForSharedConfigurationCA(
     hr = GetSharedConfigEnabled( &fIsSharedConfig );
     if ( FAILED( hr ) )
     {
-        IISLogWrite(SETUP_LOG_SEVERITY_ERROR, L"Unable to detect whether shared configuration is in use.");
+        IISLogWrite(SETUP_LOG_SEVERITY_ERROR, L"Unable to detect whether shared configuration is in use (hr=0x%x).", hr);
         status = LogMsiCustomActionError( hInstall, 30001 );
         goto exit;
     }
