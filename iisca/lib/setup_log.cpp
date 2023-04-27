@@ -83,9 +83,6 @@ Return Value:
     DWORD dwBufLen    = strMsiRegKey.QuerySizeCCH(); 
     DWORD status      = ERROR_SUCCESS;
     HKEY  hKey        = NULL;
-    
-    //for checking logging level
-    WORD i;
 
     //
     //Set MSI handle & CA name
@@ -141,12 +138,9 @@ Return Value:
    
         if ( !( status != ERROR_SUCCESS ) || ( dwBufLen > strMsiRegKey.QuerySizeCCH() ) )
         {
-            //
-            //Have Logging key Value.. we will log something
-            //
             // Check logging flags for verbosity 'v'
             //
-            for ( i = 0; i < strMsiRegKey.QueryCCH() ; i++ )
+            for ( DWORD i = 0; i < strMsiRegKey.QueryCCH() ; i++ )
             {
                 if ( strMsiRegKey.QueryStr()[ i ] == L'V' || strMsiRegKey.QueryStr()[ i ] == L'v' )
                 {

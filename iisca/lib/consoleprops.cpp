@@ -537,7 +537,12 @@ ExecuteSetConsolePropertiesCA(
 			if ( FAILED(hr) || (NULL == pConsoleProps) )
 			{
 				// Create new console properties and set defaults
-				pConsoleProps = (NT_CONSOLE_PROPS *)malloc(sizeof(NT_CONSOLE_PROPS));
+				if ((pConsoleProps = (NT_CONSOLE_PROPS *)malloc(sizeof(NT_CONSOLE_PROPS))) == NULL)
+				{
+					hr = E_OUTOFMEMORY;
+					DBGERROR_HR(hr);
+					goto exit;
+				}
 				memset(pConsoleProps,0,sizeof(NT_CONSOLE_PROPS));
 				IntializeConsoleProps(pConsoleProps);
 			}
