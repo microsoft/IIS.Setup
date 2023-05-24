@@ -297,6 +297,7 @@ IIS Medya Hizmetleri'nin bu sürümünü yüklemek için, Beta özellikleri kald
   <String Id="NetFX35OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 3.5 veya üstü gereklidir. Microsoft .Net Sürüm 3.5'i yüklemek için Sunucu Yöneticisi altındaki 'Özellik Ekle' seçeneğini kullanın.</String>
   <String Id="NetFX4OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 4.0 veya üstü gereklidir.</String>
   <String Id="NetFX45OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 4.5 veya üstü gereklidir.</String>  
+  <String Id="NetFX452OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 4.5.2 veya üstü gereklidir.</String>  
   <String Id="NetFX472OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 4.7.2 veya üstü gereklidir.</String>  
   <String Id="NetFX20SP1IsRequired">[ProductName] ürününü yüklemeden önce lütfen Microsoft .NET Framework Sürüm 2.0 Service Pack 1'i (veya daha yeni bir hizmet paketini) yükleyin.</String>
   <String Id="WindowsUpdateEnabled">Windows Update (wuauserv) hizmeti devre dışı bırakılamaz; [ProductName] ürününü yüklemek için gereklidir.</String>
