@@ -297,6 +297,7 @@ ASP.NET 역할 서비스를 설치하는 경우 제어판의 [프로그램 및 �
   <String Id="NetFX35OrGreaterRequired">[ProductName]을(를) 설치하려면 Microsoft .NET Framework 버전 3.5 이상이 필요합니다. 서버 관리자에서 '기능 추가'를 사용하여 Microsoft .Net 버전 3.5를 설치하십시오.</String>
   <String Id="NetFX4OrGreaterRequired">[ProductName]을(를) 설치하려면 Microsoft .NET Framework 버전 4.0 이상이 필요합니다.</String>
   <String Id="NetFX45OrGreaterRequired">[ProductName]을(를) 설치하려면 Microsoft .NET Framework 버전 4.5 이상이 필요합니다.</String>
+  <String Id="NetFX452OrGreaterRequired">[ProductName]을(를) 설치하려면 Microsoft .NET Framework 버전 4.5.2 이상이 필요합니다.</String>
   <String Id="NetFX472OrGreaterRequired">[ProductName]을(를) 설치하려면 Microsoft .NET Framework 버전 4.7.2 이상이 필요합니다.</String>
   <String Id="NetFX20SP1IsRequired">[ProductName]을(를) 설치하기 전에 Microsoft .NET Framework 버전 2.0 서비스 팩 1 이상을 설치하십시오.</String>
   <String Id="WindowsUpdateEnabled">[ProductName]을(를) 설치하는 데 필요하므로 Windows Update(wuauserv) 서비스를 비활성화할 수 없습니다.</String>

@@ -297,6 +297,7 @@ Para instalar esta versión de los Servicios multimedia de IIS, debe desinstalar
   <String Id="NetFX35OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 3.5 o posterior, para instalar [ProductName]. Use la opción 'Agregar características' del Administrador del servidor para instalar Microsoft .Net, versión 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.0 o posterior, para instalar [ProductName].</String>
   <String Id="NetFX45OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.5 o posterior, para instalar [ProductName].</String>  
+  <String Id="NetFX452OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.5.2 o posterior, para instalar [ProductName].</String>  
   <String Id="NetFX472OrGreaterRequired">Se requiere Microsoft .NET Framework, versión 4.7.2 o posterior, para instalar [ProductName].</String>  
   <String Id="NetFX20SP1IsRequired">Instale Microsoft .NET Framework 2.0 Service Pack 1 (o un Service Pack posterior) antes de instalar [ProductName].</String>
   <String Id="WindowsUpdateEnabled">No se puede deshabilitar el servicio Windows Update (wuauserv), porque es necesario para instalar [ProductName].</String>

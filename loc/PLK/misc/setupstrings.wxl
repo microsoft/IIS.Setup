@@ -297,6 +297,7 @@ Aby zainstalować tę wersję usług IIS Media Services, musisz odinstalować fu
   <String Id="NetFX35OrGreaterRequired">Do zainstalowania programu [ProductName] jest potrzebny program Microsoft .NET Framework w wersji 3.5 lub nowszej. Naciśnij przycisk „Dodaj funkcje” w sekcji Menedżer serwera, aby zainstalować program Microsoft .Net w wersji 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.0 lub nowszej.</String>
   <String Id="NetFX45OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.5 lub nowszej.</String>  
+  <String Id="NetFX452OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.5.2 lub nowszej.</String>  
   <String Id="NetFX472OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.7.2 lub nowszej.</String>  
   <String Id="NetFX20SP1IsRequired">Przed zainstalowaniem produktu [ProductName] zainstaluj dodatek Service Pack 1 (lub nowszy) dla programu Microsoft .NET Framework w wersji 2.0.</String>
   <String Id="WindowsUpdateEnabled">Nie można wyłączyć usługi Windows Update (wuauserv), ponieważ jest ona wymagana do zainstalowania produktu [ProductName].</String>

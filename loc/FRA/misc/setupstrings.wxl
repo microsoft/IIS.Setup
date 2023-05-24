@@ -298,6 +298,7 @@ Pour installer cette version d'IIS Services Multimédia, vous devez désinstalle
   <String Id="NetFX35OrGreaterRequired">Microsoft .NET Framework version 3.5 ou supérieure est requis pour installer [ProductName]. Utilisez l'option d'ajout de fonctionnalités du Gestionnaire de serveur pour installer Microsoft .NET Framework version 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Microsoft .NET Framework version 4.0 ou supérieure est requis pour installer [ProductName].</String>
   <String Id="NetFX45OrGreaterRequired">Microsoft .NET Framework version 4.5 ou supérieure est requis pour installer [ProductName].</String>  
+  <String Id="NetFX452OrGreaterRequired">Microsoft .NET Framework version 4.5.2 ou supérieure est requis pour installer [ProductName].</String>  
   <String Id="NetFX472OrGreaterRequired">Microsoft .NET Framework version 4.7.2 ou supérieure est requis pour installer [ProductName].</String>  
   <String Id="NetFX20SP1IsRequired">Installez Microsoft .NET Framework version 2.0 Service Pack 1 (ou SP supérieur), avant d'installer [ProductName].</String>
   <String Id="WindowsUpdateEnabled">Le service Windows Update (wuauserv) ne peut pas être désactivé, il est requis pour installer [ProductName].</String>
