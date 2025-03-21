@@ -95,4 +95,15 @@
         <Property Id="WEBPI4INSTALLED" Secure="yes">
             <RegistrySearch Id="RegistrySearch_WEBPI4INSTALLED" Type="raw" Root="HKLM" Key="SOFTWARE\Microsoft\WebPlatformInstaller\4" Name="Install" Win64="$(var.IsWin64)"/>
         </Property>
+
+        <!-- Read the processor architecture -->        
+        <Property Id="PROCESSORARCHITECTURE">
+            <RegistrySearch
+                Id="ProcessorArchitectureCheck"
+                Key="SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
+                Name="PROCESSOR_ARCHITECTURE"
+                Root="HKLM"
+                Type="raw"
+                Win64="no" />
+        </Property>
 </Include>
