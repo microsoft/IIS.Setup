@@ -8,11 +8,11 @@
     <?error Build number undefined ?>
   <?endif?>
 
-  <?if $(var.Platform) = "x64" ?>
+  <?if $(var.Platform) ~= "x64" ?>
     <?define BUILDTARGET = "amd64" ?>
-  <?elseif $(var.Platform) = "arm64" ?>
+  <?elseif $(var.Platform) ~= "arm64" ?>
     <?define BUILDTARGET = "arm64" ?>
-  <?elseif $(var.Platform) = "x86" ?>
+  <?elseif $(var.Platform) ~= "x86" ?>
     <?define BUILDTARGET = "i386" ?>
   <?endif?>
 

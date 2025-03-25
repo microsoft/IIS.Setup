@@ -294,6 +294,7 @@ Pour installer cette version d'IIS Services Multimédia, vous devez désinstalle
   <String Id="MetabaseRequired" Overridable="yes">La métabase IIS est requise pour installer [ProductName].</String>
   <String Id="LaunchCondition_32BIT">La version 64 bits de [ProductName] ne peut pas être installée sur une édition 32 bits de Microsoft Windows.</String>
   <String Id="LaunchCondition_64BIT">La version 32 bits de [ProductName] ne peut pas être installée sur une édition 64 bits de Microsoft Windows.</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">Microsoft .NET Framework version 2.0 ou supérieure est requise pour installer [ProductName].</String>
   <String Id="NetFX35OrGreaterRequired">Microsoft .NET Framework version 3.5 ou supérieure est requis pour installer [ProductName]. Utilisez l'option d'ajout de fonctionnalités du Gestionnaire de serveur pour installer Microsoft .NET Framework version 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Microsoft .NET Framework version 4.0 ou supérieure est requis pour installer [ProductName].</String>

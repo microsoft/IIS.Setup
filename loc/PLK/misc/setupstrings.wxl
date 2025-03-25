@@ -293,6 +293,7 @@ Aby zainstalować tę wersję usług IIS Media Services, musisz odinstalować fu
   <String Id="MetabaseRequired" Overridable="yes">Do zainstalowania produktu [ProductName] jest wymagana metabaza usług IIS.</String>
   <String Id="LaunchCondition_32BIT">Nie można zainstalować 64-bitowej wersji produktu [ProductName] w 32-bitowej wersji systemu Microsoft Windows.</String>
   <String Id="LaunchCondition_64BIT">Nie można zainstalować 32-bitowej wersji produktu [ProductName] w 64-bitowej wersji systemu Microsoft Windows.</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">Do zainstalowania produktu [ProductName] jest wymagany program .NET Framework w wersji 2.0 lub nowszy.</String>
   <String Id="NetFX35OrGreaterRequired">Do zainstalowania programu [ProductName] jest potrzebny program Microsoft .NET Framework w wersji 3.5 lub nowszej. Naciśnij przycisk „Dodaj funkcje” w sekcji Menedżer serwera, aby zainstalować program Microsoft .Net w wersji 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Do zainstalowania programu [ProductName] jest wymagany program Microsoft .NET Framework w wersji 4.0 lub nowszej.</String>

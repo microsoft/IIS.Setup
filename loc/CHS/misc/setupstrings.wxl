@@ -293,6 +293,7 @@
   <String Id="MetabaseRequired" Overridable="yes">若要安装 [ProductName]，需要 IIS 元数据库。</String>
   <String Id="LaunchCondition_32BIT">无法在 32 位版本的 Microsoft Windows 上安装 64 位版本的 [ProductName]。</String>
   <String Id="LaunchCondition_64BIT">无法在 64 位版本的 Microsoft Windows 上安装 32 位版本的 [ProductName]。</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">若要安装 [ProductName]，需要 Microsoft .NET Framework 2.0 版或更高版本。</String>
   <String Id="NetFX35OrGreaterRequired">需要有 Microsoft .NET Framework 3.5 版或更高版本才能安装 [ProductName]。使用“服务器管理器”下的“添加功能”可安装 Microsoft .Net 3.5 版。</String>
   <String Id="NetFX4OrGreaterRequired">需要有 Microsoft .NET Framework 4.0 版或更高版本才能安装 [ProductName]。</String>

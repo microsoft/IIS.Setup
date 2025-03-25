@@ -293,6 +293,7 @@
   <String Id="MetabaseRequired" Overridable="yes">需要 IIS Metabase 才能安裝 [ProductName]。</String>
   <String Id="LaunchCondition_32BIT">無法將 64 位元版本的 [ProductName] 安裝在 32 位元版本的 Microsoft Windows 上。</String>
   <String Id="LaunchCondition_64BIT">無法將 32 位元版本的 [ProductName] 安裝在 64 位元版本的 Microsoft Windows 上。</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">需要 Microsoft .NET Framework 2.0 版本或更新版本，才能安裝 [ProductName]。</String>
   <String Id="NetFX35OrGreaterRequired">必須安裝 Microsoft .NET Framework 3.5 (含) 以上版本，才能安裝 [ProductName]。請使用伺服器管理員底下的「新增功能」安裝 Microsoft .NET 3.5 版。</String>
   <String Id="NetFX4OrGreaterRequired">需要 Microsoft .NET Framework 4 (含) 以上版本才能安裝 [ProductName]。</String>

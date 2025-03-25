@@ -293,6 +293,7 @@ IIS Medya Hizmetleri'nin bu sürümünü yüklemek için, Beta özellikleri kald
   <String Id="MetabaseRequired" Overridable="yes">[ProductName] ürününü yüklemek için IIS Metatabanı gereklidir.</String>
   <String Id="LaunchCondition_32BIT">[ProductName] ürünün 64-bit sürümü Microsoft Windows'un 32-bit bir sürümüne yüklenemez.</String>
   <String Id="LaunchCondition_64BIT">[ProductName] ürünün 32-bit sürümü Microsoft Windows'un 64-bit bir sürümüne yüklenemez.</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 2.0 veya üstü gereklidir.</String>
   <String Id="NetFX35OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 3.5 veya üstü gereklidir. Microsoft .Net Sürüm 3.5'i yüklemek için Sunucu Yöneticisi altındaki 'Özellik Ekle' seçeneğini kullanın.</String>
   <String Id="NetFX4OrGreaterRequired">[ProductName] ürününü yüklemek için Microsoft .NET Framework Sürüm 4.0 veya üstü gereklidir.</String>
