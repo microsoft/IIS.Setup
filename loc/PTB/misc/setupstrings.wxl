@@ -293,6 +293,7 @@ Para instalar esta versão do IIS Media Services, desinstale os recursos Beta.]]
   <String Id="MetabaseRequired" Overridable="yes">É necessária a Metabase do IIS para instalar o [ProductName].</String>
   <String Id="LaunchCondition_32BIT">Não é possível instalar a versão de 64 bits do [ProductName] em uma edição de 32 bits do Microsoft Windows.</String>
   <String Id="LaunchCondition_64BIT">Não é possível instalar a versão de 32 bits do [ProductName] em uma edição de 64 bits do Microsoft Windows.</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">É necessário o Microsoft .NET Framework Versão 2.0 ou posterior para instalar o [ProductName].</String>
   <String Id="NetFX35OrGreaterRequired">O Microsoft .NET Framework Versão 3.5 ou posterior é necessário para instalar o [ProductName]. Use 'Adicionar Recursos' no Gerenciador do Servidor para instalar o Microsoft .Net Versão 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">O Microsoft .NET Framework Versão 4.0 ou posterior é necessário para instalar o [ProductName].</String>

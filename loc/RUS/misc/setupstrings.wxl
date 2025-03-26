@@ -293,6 +293,7 @@
   <String Id="MetabaseRequired" Overridable="yes">Для установки [ProductName] требуется метабаза IIS.</String>
   <String Id="LaunchCondition_32BIT">64-разрядную версию [ProductName] нельзя установить на 32-разрядный выпуск Microsoft Windows.</String>
   <String Id="LaunchCondition_64BIT">32-разрядную версию [ProductName] нельзя установить на 64-разрядный выпуск Microsoft Windows.</String>
+  <String Id="LaunchCondition_ARM64">The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows.</String>
   <String Id="NetFX2OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 2.0 или более поздней.</String>
   <String Id="NetFX35OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 3.5 или более поздней.  Воспользуйтесь функцией диспетчера сервера "Добавить функции", чтобы установить Microsoft .Net версии 3.5.</String>
   <String Id="NetFX4OrGreaterRequired">Для установки [ProductName] требуется Microsoft .NET Framework версии 4.0 или более поздней.</String>
