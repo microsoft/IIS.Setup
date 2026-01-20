@@ -37,10 +37,10 @@
       <Platform>ARM64EC</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <PropertyGroup>
-    <WixPkgPath>..\..\packages\VS.Tools.Wix.17.0.21110501\</WixPkgPath>
-    <WixNativeCATargetsPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\wix.nativeca.targets</WixNativeCATargetsPath>
-  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.WcaUtil" />
+    <PackageReference Include="WixToolset.DUtil" />
+  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cgi_restrictions.cpp" />
     <ClCompile Include="ConfigShared.cpp" />
@@ -106,7 +106,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(WixIncPath);$(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <Link>
@@ -130,33 +130,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
     <Link>
-      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x86);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x86);$(WindowsSDK_LibraryPath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
     <Link>
-      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_x64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>Machinex64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)'=='ARM64' Or '$(Platform)'=='ARM64EC'">
     <Link>
-      <AdditionalLibraryDirectories>$(VC_ReferencesPath_arm64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);$(WixLibPath)arm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(VC_ReferencesPath_arm64);$(WindowsSDK_LibraryPath)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>MachineArm64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <Import Project="$(WixNativeCATargetsPath)" Condition=" '$(WixNativeCATargetsPath)' != '' " />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.NativeCA.targets" Condition=" '$(WixNativeCATargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.NativeCA.targets') " />
-  <Target Name="EnsureWixToolsetInstalled" BeforeTargets="_PrepareForBuild" Condition=" '$(WixNativeCATargetsImported)' != 'true' ">
-    <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
-  </Target>
   <PropertyGroup>
-    <WixLibPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\$(WixPlatformToolset)\lib\</WixLibPath>
-    <WixLibPath Condition=" '$(WixLibPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\lib\</WixLibPath>
-    <WixIncPath Condition=" Exists('$(WixPkgPath)') ">$(WixPkgPath)bin\sdk\inc\</WixIncPath>
-    <WixIncPath Condition=" '$(WixIncPath)' == '' ">$(WIX)sdk\$(WixPlatformToolset)\inc\</WixIncPath>
+    <!-- WiX v5 paths are provided by NuGet packages WixToolset.WcaUtil and WixToolset.DUtil -->
   </PropertyGroup>
   <Target Name="EnsureImportsExist" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

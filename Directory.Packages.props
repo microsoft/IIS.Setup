@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="WixToolset.WcaUtil" Version="6.0.2" />
+    <PackageVersion Include="WixToolset.DUtil" Version="6.0.2" />
+  </ItemGroup>
+</Project>
