@@ -147,9 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <PropertyGroup>
-    <!-- WiX v5 paths are provided by NuGet packages WixToolset.WcaUtil and WixToolset.DUtil -->
-  </PropertyGroup>
   <Target Name="EnsureImportsExist" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project is trying to import a missing file: {0}.</ErrorText>
@@ -158,4 +155,5 @@
     <Error Condition="!Exists('$(IIS-Common)build\settings.props')" Text="$([System.String]::Format('$(ErrorText)', '$(IIS-Common)build\settings.props'))" />
     <Error Condition="!Exists('$(IIS-Common)build\versions.props')" Text="$([System.String]::Format('$(ErrorText)', '$(IIS-Common)build\versions.props'))" />
   </Target>
+  <Target Name="ResolveNuGetPackageAssets" Condition="$([MSBuild]::VersionLessThan('$(VisualStudioVersion)', '18.0'))" />
 </Project>
