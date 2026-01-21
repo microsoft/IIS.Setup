@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!--
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the MIT license.
+-->
+
+<Include xmlns='http://wixtoolset.org/schemas/v4/wxs'>
+
+<!-- This is the old fragment:
+
+  <Fragment Id="Fragment.IIS.OOB.Common.HttpListener">
+
+To add this to your wxs file, add:
+
+    <?include $(var.PROJECT_ROOT)\setup\iisca\wix5\filename.wxi ?>
+
+-->
+
+
+    <!-- Immediate custom actions which will package and schedule deferred actions for httpsys -->
+    <CustomAction Id="ScheduleInstallHttpListener" BinaryRef="IISCustomActionDll" DllEntry="ScheduleInstallHttpListenerCA" Execute="immediate" Return="check" />
+    <CustomAction Id="ScheduleUnInstallHttpListener" BinaryRef="IISCustomActionDll" DllEntry="ScheduleUnInstallHttpListenerCA" Execute="immediate" Return="check"  />
+    
+    <!-- Deferred custom actions scheduled by the immediate actions above -->
+    <CustomAction Id="ExecuteInstallHttpListener" BinaryRef="IISCustomActionDll" DllEntry="ExecuteInstallHttpListenerCA" Execute="deferred" Return="check" Impersonate="no" />
+    <CustomAction Id="ExecuteUnInstallHttpListener" BinaryRef="IISCustomActionDll" DllEntry="ExecuteUnInstallHttpListenerCA" Execute="deferred" Return="check" Impersonate="no" />
+    
+    <!-- Setup Custom Action Parameters -->
+    
+    <!-- Define a table to hold registration parameters -->
+    <CustomTable Id='IISHttpListener'>
+      <Column Id='Name' Type='string' PrimaryKey='yes' />
+      <Column Id='Component_' Type='string' KeyTable='Component' KeyColumn='1' Category='identifier' Width='72' Modularize='column'/>
+      <Column Id='Account' Type='string' />
+      <Column Id='Prefix' Type='string' />
+    </CustomTable>
+    
+    <InstallExecuteSequence>
+      <Custom Action='ScheduleInstallHttpListener' After='InstallFiles' Condition='NOT SKIPINSTALLHTTPLISTENER' />
+      <Custom Action='ScheduleUnInstallHttpListener' Before='RemoveFiles' Condition='NOT SKIPUNINSTALLHTTPLISTENER' />
+    </InstallExecuteSequence>
+</Include>  
