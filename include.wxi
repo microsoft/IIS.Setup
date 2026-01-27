@@ -18,6 +18,7 @@
 
   <?if $(var.BUILDTARGET)="amd64"?>
     <?define IsWin64 = yes ?>
+    <?define Bitness = always64 ?>
     <?define PlatformArchitecture = x64 ?>
     <?define ProgramFilesFolder = ProgramFiles64Folder ?>
     <?define ProgramFilesFolder32 = ProgramFilesFolder ?>
@@ -26,6 +27,7 @@
     <?define PlatformValue = x64 ?>
   <?elseif $(var.BUILDTARGET) = "arm64"?>
     <?define IsWin64 = yes ?>
+    <?define Bitness = always64 ?>
     <?define PlatformArchitecture = arm64 ?>
     <?define ProgramFilesFolder = ProgramFiles64Folder ?>
     <?define ProgramFilesFolder32 = ProgramFilesFolder ?>
@@ -34,6 +36,7 @@
     <?define PlatformValue = arm64 ?>
   <?elseif $(var.BUILDTARGET)="i386" ?>
     <?define IsWin64 = no ?>
+    <?define Bitness = always32 ?>
     <?define PlatformArchitecture = x86 ?>
     <?define ProgramFilesFolder = ProgramFilesFolder ?>
     <?define SystemFolder = SystemFolder ?>
