@@ -27,7 +27,7 @@ To add this to your wxs file, add:
     
     <CustomTable Id="IISWindowsHotfix">
       <Column Id="Name" Type="string" PrimaryKey="yes"/>
-      <Column Id="BinaryName_" Type="string" KeyTable="Binary" KeyColumn="1" Category="identifier" Width="72" Modularize="column"/>
+      <Column Id="BinaryName_" Type="string" KeyTable="Binary" KeyColumn="1" Category="identifier" Width="72"/>
       <Column Id="OSMajorVersion" Type="int" Width="4" Nullable="yes"/>
       <Column Id="OSMinorVersion" Type="int" Width="4" Nullable="yes"/>
       <Column Id="SPMajorVersion" Type="int" Width="2" Nullable="yes"/>
