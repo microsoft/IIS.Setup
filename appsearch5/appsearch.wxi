@@ -90,4 +90,9 @@
         <Property Id="WEBPI4INSTALLED" Secure="yes">
             <RegistrySearch Id="RegistrySearch_WEBPI4INSTALLED" Type="raw" Root="HKLM" Key="SOFTWARE\Microsoft\WebPlatformInstaller\4" Name="Install" Bitness="$(var.Bitness)"/>
         </Property>
+
+        <!-- search for VC14 runtime (Visual C++ 2015-2022 Redistributable) -->
+        <Property Id="VC14REDIST_INSTALLED" Secure="yes">
+            <RegistrySearch Id="RegistrySearch_VC14REDIST" Type="raw" Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\$(var.PlatformValue)" Name="Installed" Bitness="$(var.Bitness)"/>
+        </Property>
 </Include>

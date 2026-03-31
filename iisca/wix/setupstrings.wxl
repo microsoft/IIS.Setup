@@ -189,6 +189,7 @@
   <String Id="IISManagementConsole" Overridable="yes" Value="The IIS Management Console must be installed to use [ProductName]." />
   <String Id="WebServicesRunning" Overridable="yes" Value="Please stop both services Windows Process Activation Service (WAS) and Web Management Service (WMSvc) before installing [ProductName]. You will need to start the services after installing [ProductName]." />
   <String Id="MetabaseRequired" Overridable="yes" Value="IIS Metabase is required to install [ProductName]." />
+  <String Id="VC14RedistRequired" Overridable="yes" Value="The Microsoft Visual C++ 2015-2022 Redistributable is required to install [ProductName]." />
   <String Id="LaunchCondition_32BIT" Value="The 64-bit version of [ProductName] cannot be installed on a 32-bit edition of Microsoft Windows." />
   <String Id="LaunchCondition_64BIT" Value="The 32-bit version of [ProductName] cannot be installed on a 64-bit edition of Microsoft Windows." />
   <String Id="LaunchCondition_ARM64" Value="The 64-bit version of [ProductName] cannot be installed on a ARM64 edition of Microsoft Windows." />
